@@ -1,0 +1,60 @@
+What is Linux shell
+==============================================================
+Shell is an command language interpreter that executes commands 
+read from the standard input device (keyboard) or from a file. 
+Shell is not part of system kernel, but uses the system kernel 
+to execute programs, create files etc.
+
+Know about VI EDITOR
+==============================================================
+VI Editor is the default editor comes with most of the UNIX 
+based operating systems vi -Visual editor
+vi editor has two operation modes
+1=> COMMAND MODE
+================
+command mode is used to perform administrative tasks like 
+save,delete,copy,paste etc....
+
+2==> INSERT MODE
+================
+this mode is used to insert data into a file 
+
+STEPS TO WRITE A SHELL SCRIPTING
+================================
+step 1==>
+	create a file with the extension of .sh
+
+	open your terminal using ctrl+alt+t
+	type ===> $vi file_name.sh
+		  it navigates you to a vi editor environment
+		  usually it will be in COMMAND MODE
+	type ===> i 
+		  it directs to insert mode 
+step 2==> 
+	type ==> 
+		echo "Enter first your number"   	//echo == is used to print a string 
+		read a					// read == is used to read a value from key board into variable a
+		echo "Enter your second number"
+		read b					//read a value from key board into variable b
+		sum=`expr $a + $b`			// adding two vaiables a,b with using expr,The expr command performs simple integer 								//arithmetic
+		echo "SUM OF TWO NUMBER IS :$sum"	//printing the results
+step 3==>
+	press Esc button on keyboard
+	type==>
+		:wq					//used to save current document in same file name and exit
+step 4==>
+	MAKE YOUR FILE AS EXECUTABLE
+	chmod +x filename.sh
+step 5==>
+	RUN FILE 
+	sh filename.sh
+	or
+	./filename.sh
+========================================
+you will get output as we expected :)
+========================================
+thank you 
+
+
+		
+		
